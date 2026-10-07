@@ -1,0 +1,1035 @@
+/* =================================
+   RESET & GENERAL STYLING
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f7f8f3;
+
+    color: #1f3028;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* =================================
+   NAVIGATION BAR
+================================= */
+
+header {
+    width: 100%;
+
+    background-color: #f7f8f3;
+}
+
+
+.navbar {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 25px 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.logo {
+    color: #1f3028;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    letter-spacing: -1px;
+}
+
+
+.logo span {
+    color: #5b8c68;
+}
+
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+
+    gap: 30px;
+}
+
+
+.nav-links a {
+    color: #30443a;
+
+    font-size: 15px;
+
+    transition: color 0.3s ease;
+}
+
+
+.nav-links a:hover {
+    color: #5b8c68;
+}
+
+
+
+/* =================================
+   HERO SECTION
+================================= */
+
+.hero {
+    max-width: 1200px;
+
+    margin: auto;
+
+    min-height: 650px;
+
+    padding: 70px 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+
+.hero-content {
+    flex: 1;
+}
+
+
+.tagline {
+    color: #5b8c68;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+
+.hero h1 {
+    font-size: 68px;
+
+    line-height: 1.05;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 30px;
+}
+
+
+.hero-text {
+    max-width: 500px;
+
+    color: #617168;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-bottom: 35px;
+}
+
+
+.hero-button {
+    display: inline-block;
+
+    padding: 15px 28px;
+
+    background-color: #355d45;
+
+    color: white;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.hero-button:hover {
+    background-color: #244331;
+
+    transform: translateY(-2px);
+}
+
+
+
+/* =================================
+   HERO IMAGE
+================================= */
+
+.hero-image {
+    flex: 1;
+}
+
+
+.hero-image img {
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+}
+
+
+
+/* =================================
+   COMMON SECTION LABEL
+================================= */
+
+.section-label {
+    color: #5b8c68;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 25px;
+}
+
+
+
+/* =================================
+   ABOUT SECTION
+================================= */
+
+.about {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 110px 40px;
+}
+
+
+.about-content {
+    display: flex;
+
+    gap: 100px;
+}
+
+
+.about-heading,
+.about-text {
+    flex: 1;
+}
+
+
+.about h2 {
+    font-size: 50px;
+
+    line-height: 1.1;
+
+    letter-spacing: -2px;
+}
+
+
+.about h2 span {
+    color: #5b8c68;
+}
+
+
+.about-text {
+    color: #617168;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+
+
+/* =================================
+   PROJECTS SECTION
+================================= */
+
+.projects {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 110px 40px;
+}
+
+
+.projects-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+    gap: 60px;
+
+    margin-bottom: 60px;
+}
+
+
+.projects-heading h2 {
+    font-size: 52px;
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+
+.projects-heading h2 span {
+    color: #5b8c68;
+}
+
+
+.projects-intro {
+    max-width: 390px;
+
+    color: #617168;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+
+/* =================================
+   PROJECT GRID
+================================= */
+
+.project-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 35px;
+}
+
+
+
+/* =================================
+   PROJECT CARD
+================================= */
+
+.project-card {
+    background-color: white;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 35px rgba(35, 55, 45, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.project-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 18px 45px rgba(35, 55, 45, 0.13);
+}
+
+
+
+/* =================================
+   PROJECT IMAGE
+================================= */
+
+.project-image {
+    width: 100%;
+
+    height: 280px;
+
+    overflow: hidden;
+}
+
+
+.project-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+
+
+/* =================================
+   PROJECT INFORMATION
+================================= */
+
+.project-info {
+    padding: 30px;
+}
+
+
+.project-number {
+    color: #8da294;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+.project-info h3 {
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+
+.project-info > p:not(.project-number) {
+    color: #617168;
+
+    line-height: 1.7;
+
+    margin-bottom: 22px;
+}
+
+
+
+/* =================================
+   PROJECT CATEGORY TAG
+================================= */
+
+.project-tag {
+    display: inline-block;
+
+    padding: 7px 13px;
+
+    border: 1px solid #d5e0d8;
+
+    border-radius: 20px;
+
+    color: #5b8c68;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+
+/* =================================
+   IMPACT SECTION
+================================= */
+
+.impact {
+    margin-top: 60px;
+
+    padding: 110px 40px;
+
+    background-color: #dfeae1;
+}
+
+
+.impact-heading {
+    max-width: 1200px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+.impact-heading h2 {
+    font-size: 55px;
+
+    line-height: 1.1;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 60px;
+}
+
+
+.impact-heading h2 span {
+    color: #5b8c68;
+}
+
+
+
+/* =================================
+   IMPACT NUMBERS
+================================= */
+
+.impact-grid {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.impact-card {
+    padding: 35px 20px;
+
+    background-color: #f7f8f3;
+
+    border-radius: 18px;
+
+    text-align: center;
+}
+
+
+.impact-card strong {
+    display: block;
+
+    color: #355d45;
+
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+
+.impact-card p {
+    color: #617168;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+
+/* =================================
+   IMPACT IN ACTION GALLERY
+================================= */
+
+.gallery {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 120px 40px;
+}
+
+
+
+/* GALLERY HEADING */
+
+.gallery-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+    gap: 60px;
+
+    margin-bottom: 55px;
+}
+
+
+.gallery-heading h2 {
+    font-size: 55px;
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+
+.gallery-heading h2 span {
+    color: #5b8c68;
+}
+
+
+.gallery-intro {
+    max-width: 390px;
+
+    color: #617168;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+
+/* =================================
+   GALLERY GRID
+================================= */
+
+.gallery-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-auto-rows: 280px;
+
+    gap: 20px;
+}
+
+
+
+/* =================================
+   GALLERY CARDS
+================================= */
+
+.gallery-item {
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    background-color: #dfeae1;
+}
+
+
+.gallery-item img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.6s ease;
+}
+
+
+.gallery-item:hover img {
+    transform: scale(1.06);
+}
+
+
+
+/* LARGE IMAGE */
+
+.gallery-large {
+    grid-row: span 2;
+}
+
+
+
+/* WIDE IMAGE */
+
+.gallery-wide {
+    grid-column: span 2;
+}
+
+
+
+/* =================================
+   IMAGE OVERLAY
+================================= */
+
+.gallery-overlay {
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    padding: 45px 30px 28px;
+
+    color: white;
+
+    background: linear-gradient(
+        transparent,
+        rgba(20, 35, 27, 0.88)
+    );
+
+    transform: translateY(8px);
+
+    transition: transform 0.3s ease;
+}
+
+
+.gallery-item:hover .gallery-overlay {
+    transform: translateY(0);
+}
+
+
+.gallery-overlay span {
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #b9d4c0;
+}
+
+
+.gallery-overlay h3 {
+    font-size: 24px;
+
+    margin-top: 8px;
+}
+
+
+
+/* =================================
+   GET INVOLVED SECTION
+================================= */
+
+.involved {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 120px 40px;
+}
+
+
+.involved-content {
+    max-width: 750px;
+}
+
+
+.involved h2 {
+    font-size: 65px;
+
+    line-height: 1.05;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 25px;
+}
+
+
+.involved h2 span {
+    color: #5b8c68;
+}
+
+
+.involved-content > p:not(.section-label) {
+    max-width: 600px;
+
+    color: #617168;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+}
+
+
+.involved-button {
+    display: inline-block;
+
+    padding: 15px 28px;
+
+    background-color: #355d45;
+
+    color: white;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: background-color 0.3s ease;
+}
+
+
+.involved-button:hover {
+    background-color: #244331;
+}
+
+
+
+/* =================================
+   FOOTER
+================================= */
+
+footer {
+    background-color: #1f3028;
+
+    color: white;
+
+    padding: 45px 40px;
+}
+
+
+.footer-content {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.footer-logo {
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+
+.footer-logo span {
+    color: #8db69a;
+}
+
+
+.footer-content p {
+    color: #c5d0c8;
+
+    font-size: 14px;
+}
+
+
+.footer-content .hashtag {
+    color: #8db69a;
+
+    font-weight: bold;
+}
+
+
+
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 800px) {
+
+
+    /* NAVBAR */
+
+    .navbar {
+        padding: 20px;
+    }
+
+
+    .nav-links {
+        gap: 12px;
+
+        flex-wrap: wrap;
+
+        justify-content: flex-end;
+    }
+
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+
+
+    /* HERO */
+
+    .hero {
+        flex-direction: column;
+
+        padding: 50px 20px;
+
+        gap: 40px;
+    }
+
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+
+    .hero-image {
+        width: 100%;
+    }
+
+
+    .hero-image img {
+        height: 350px;
+    }
+
+
+
+    /* ABOUT */
+
+    .about {
+        padding: 70px 20px;
+    }
+
+
+    .about-content {
+        flex-direction: column;
+
+        gap: 40px;
+    }
+
+
+    .about h2 {
+        font-size: 42px;
+    }
+
+
+
+    /* PROJECTS */
+
+    .projects {
+        padding: 70px 20px;
+    }
+
+
+    .projects-heading {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+
+    .projects-heading h2 {
+        font-size: 42px;
+    }
+
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+
+    /* IMPACT */
+
+    .impact {
+        padding: 80px 20px;
+    }
+
+
+    .impact-heading h2 {
+        font-size: 42px;
+    }
+
+
+    .impact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+    /* GALLERY */
+
+    .gallery {
+        padding: 80px 20px;
+    }
+
+
+    .gallery-heading {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+
+    .gallery-heading h2 {
+        font-size: 42px;
+    }
+
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+
+        grid-auto-rows: 260px;
+    }
+
+
+    .gallery-large {
+        grid-row: span 1;
+    }
+
+
+    .gallery-wide {
+        grid-column: span 1;
+    }
+
+
+
+    /* GET INVOLVED */
+
+    .involved {
+        padding: 80px 20px;
+    }
+
+
+    .involved h2 {
+        font-size: 48px;
+    }
+
+
+
+    /* FOOTER */
+
+    .footer-content {
+        flex-direction: column;
+
+        gap: 15px;
+
+        text-align: center;
+    }
+
+}
